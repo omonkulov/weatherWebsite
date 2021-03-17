@@ -80,9 +80,10 @@ html,body
 }
 
 .navbar__links:hover {
-  color: #1ca9cc;
+  color: #ffffff;
   transition: all 0.05s ease;
   text-decoration: underline;
+  font-size: 110%;
 }
 
 @media screen and (max-width: 960px) {
@@ -307,7 +308,10 @@ html,body
   .services__card:hover {
     transform: scale(1.015);
     transition: 0.01s ease-in;
-    cursor: pointer;
+    box-shadow:
+    0 0 6px 3px rgb(255, 255, 255),
+    0 0 10px 6px rgb(0, 183, 255),
+    0 0 14px 9px rgb(211, 224, 224);
   }
   
   @media screen and (max-width: 1300px) {
