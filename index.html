@@ -11,6 +11,8 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
+    <!-- Make sure the main.js is imported before any other js files -->
+    <script src="./js/main.js"></script> 
   </head>
   <body>
     <!-- Navbar Section -->
@@ -61,6 +63,8 @@
           </div>
       </div>
     </div>
-
+    <!--Import js files after everything else is loaded. Otherwise it will not able to find any components-->
+    <script src="./js/crew.js"></script>  
+    
   </body>
 </html>
