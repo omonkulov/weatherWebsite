@@ -14,20 +14,12 @@ html,body
     padding: 0px;
     overflow-x: hidden; 
 }
-
-@media only screen and (max-width: 1100px) {
-  .segment {
-  background-attachment: scroll !important;
-  background-position: center center !important;
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  #top__Image {
+    background-attachment: scroll;
   }
-  }
-  
-  @media only screen and (-webkit-min-device-pixel-ratio: 2) { 
-  .segment {
-  background-attachment: scroll !important;
-  background-position: center center !important;
-  }
-  }
+}
 
 .navbar {
   background: #1d1d1f;
@@ -89,7 +81,7 @@ html,body
 
 .navbar__links:hover {
   color: #1ca9cc;
-  transition: all 0.3s ease;
+  transition: all 0.05s ease;
   text-decoration: underline;
 }
 
