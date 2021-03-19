@@ -15,8 +15,8 @@ html,body
     overflow-x: hidden; 
 }
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  #top__Image {
+@media only screen and (max-device-width: 360px) {
+   #top__Image {
     background-attachment: scroll;
   }
 }
@@ -31,6 +31,7 @@ html,body
   position: sticky;
   top: 0;
   z-index: 999;
+  border-bottom: 5px solid rgb(255, 255, 255);
 }
 
 .navbar__container {
@@ -42,6 +43,7 @@ html,body
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 -70px;
+  position: absolute;
 }
 
 #navbar__logo {
@@ -62,6 +64,7 @@ html,body
   display: flex;
   align-items: center;
   list-style: none;
+  
 }
 
 .navbar__item {
@@ -80,10 +83,12 @@ html,body
 }
 
 .navbar__links:hover {
-  color: #00a2ff;
+  color: #ffffff;
   transition: all 0.05s ease;
   text-decoration: underline;
-  font-size: 110%;
+  font-size: 105%;
+  border: 5px solid rgb(255, 255, 255);
+  border-top: 5px solid rgb(255, 255, 255);;
 }
 
 @media screen and (max-width: 960px) {
@@ -105,7 +110,7 @@ html,body
     position: absolute;
     top: -1000px;
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     z-index: -1;
   }
 
@@ -113,7 +118,7 @@ html,body
     background: #131313;
     top: 100%;
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     z-index: 99;
     height: 60vh;
     font-size: 1.6rem;
@@ -140,6 +145,7 @@ html,body
     padding: 2rem;
     width: 100%;
     display: table;
+    font-size: 100%;
   }
 
   .navbar__btn {
@@ -171,8 +177,11 @@ html,body
   }
   .upArrow {
    transform: rotate(180deg);
-   left: 2.35%; 
-   top: 10%;
+   position: relative;
+   width: 40px;
+   height: 40px;
+   top: -10%;
+   left: 65px;
   }
 }
 
@@ -194,37 +203,35 @@ html,body
 
   #top_Text{
       font-size: 3.5rem;
-      display: flex;
+      display: grid;
       justify-content: center;
-      margin-top: 100px;
       font: "Lucida Console", "Courier New", monospace;
       position: static;
-      top: 50%;
-      left: 50%;
-      margin-top: -25%;
+      margin-top: -18.5%;
       text-shadow:2px 2px  rgb(129, 129, 129);
-      color: rgb(243, 243, 243);
+      color: rgb(255, 255, 255);
       text-decoration: underline ;
       
   }
 
   #top__Image {
-    background-image: url("images/mars_planet_space_154711_2560x1024.jpg");
+
+    background-image: url("../resource/images/3-37929_ultra-hd-earth-4k.jpg");
     min-height: 1024px;
-    width: 2560px;
+    min-width: 3840px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
   }  
 
   .upArrow{
   position: relative;
   width: 40px;
   height: 40px;
-  margin-left: 48%;
-  margin-top: 100px;
+  margin-left: 48.5%;
+  margin-top: 300px;
   }
 
   .chevron {
@@ -409,9 +416,10 @@ html,body
 }
 
  #Rocket__Pictures{
-  background-image: url("https://i.ytimg.com/vi/JKf45ATgATc/maxresdefault.jpg");
-  min-height: 720px;
-  width: 100%;
+  background-image: url("https://cdn.wallpapersafari.com/21/16/Q9EIrk.jpg");
+  min-height: 600px;
+  width: auto;
+  height: auto;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -419,3 +427,28 @@ html,body
   margin-top: -10px;
 
  }
+
+
+/* total width */
+body::-webkit-scrollbar {
+  background-color: rgba(78, 78, 78, 0.877);
+  width: 4px;
+
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 2px solid rgb(151, 151, 151);
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+  display:none;
+}
