@@ -385,6 +385,7 @@ html,body
     border-radius: 4px;
     background: #131313;
     font-size: 1rem;
+    width: 200px;
   }
 
   
@@ -393,8 +394,8 @@ html,body
     transition: 0.01s ease-in;
     box-shadow:
     0 0 6px 3px rgb(255, 255, 255),
-    0 0 10px 6px rgb(0, 183, 255),
-    0 0 14px 9px rgb(211, 224, 224);
+    0 0 10px 6px rgb(3, 112, 255),
+    0 0 14px 9px rgb(0, 209, 209);
   }
   
   @media screen and (max-width: 1300px) {
@@ -431,8 +432,8 @@ html,body
 
 /* total width */
 body::-webkit-scrollbar {
-  background-color: rgba(78, 78, 78, 0.877);
-  width: 4px;
+  background-color: rgba(255, 255, 255, 0.877);
+  width: 5px;
 
 }
 
@@ -443,12 +444,23 @@ body::-webkit-scrollbar-track {
 
 /* scrollbar itself */
 body::-webkit-scrollbar-thumb {
-  background-color: #babac0;
+  background-color: #ffffff;
   border-radius: 16px;
-  border: 2px solid rgb(151, 151, 151);
+  border: 3px solid rgb(255, 255, 255);
 }
 
 /* set button(top and bottom of the scrollbar) */
 body::-webkit-scrollbar-button {
   display:none;
+}
+@media screen and (orientation: landscape) {
+  head {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
 }
