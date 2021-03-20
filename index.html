@@ -13,8 +13,6 @@
   <link rel="stylesheet" href="./CSS/styles.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
-  <!-- Make sure the main.js is imported before any other js files -->
-  <script src="./JavaScript/main.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -57,7 +55,7 @@
     <div class="services" id="services">
       <h1>Upcoming Launches</h1>
       <div class="services__wrapper">
-        <div class="services__card">
+        <div id="upcoming1" class="services__card">
           <!-- Aslo change the name of the rocket to the name given -->
           <!-- Aslo change the timver value to show how many days remaning. -->
           <h2>Launch 1</h2>
@@ -66,14 +64,14 @@
             <h3>Timer : </h3>
           </div>
         </div>
-        <div class="services__card">
+        <div id="upcoming2" class="services__card">
           <h2>Launch 2</h2>
           <p>Rocket Name</p>
           <div class="services__btn">
             <h3>Time : </h3>
           </div>
         </div>
-        <div class="services__card">
+        <div id="upcoming3" class="services__card">
           <h2>Launch 3</h2>
           <p>Rocket Name</p>
           <div class="services__btn">
@@ -82,14 +80,14 @@
         </div>
       </div>
     </div>
-    <div class="pictures" id="pictures">
+    <div id="launch" class="pictures" id="pictures">
       <div id="Rocket__Pictures"></div>
       <div id="gallery">
         <div id="recent_launches">
           <div class="services" id="services">
             <h1>Recent Launches</h1>
             <div class="services__wrapper">
-              <div class="services__card">
+              <div  id="past1"class="services__card">
                 <h2>Launch 1</h2>
                 <!--For each on of them chagn where is says status to fail or tbh or success -->
                 <!-- Aslo change the name of the rocket to the name given -->
@@ -99,7 +97,7 @@
                   <h3>Status : </h3>
                 </div>
               </div>
-              <div class="services__card">
+              <div id="past2" class="services__card">
                 <h2>Launch 2</h2>
                 <p>Rocket Name</p>
                 <!--For each on of them chagn where is says status to fail or tbh or success -->
@@ -108,7 +106,7 @@
                   <h3>Status : </h3>
                 </div>
               </div>
-              <div class="services__card">
+              <div id="past3" class="services__card">
                 <h2>Launch 3</h2>
                 <p>Rocket Name</p>
                 <div class="services__btn">
@@ -118,8 +116,7 @@
             </div>
           </div>
           <script src="./JavaScript/navPop.js"></script>
-          <!--Import js files after everything else is loaded. Otherwise it will not able to find any components-->
-          <script src="./JavaScript/crew.js" type="text/javascript"></script>
+          <script src="./JavaScript/main.js" type="text/javascript"></script>
 </body>
 
 </html>
